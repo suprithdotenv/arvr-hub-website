@@ -1,0 +1,32 @@
+/* Subtle Museum & Editorial Keyframe Animations */
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes lineFade {
+  0% {
+    opacity: 0.3;
+    transform: scaleX(0.4);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scaleX(0.4);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtleFloat 5s ease-in-out infinite;
+}
+
+.animate-line-fade {
+  animation: lineFade 2.5s ease-in-out infinite;
+}
